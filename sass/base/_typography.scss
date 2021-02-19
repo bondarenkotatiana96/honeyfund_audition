@@ -1,0 +1,20 @@
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color-text-primary;
+    text-align: left;
+    font-family: $font;
+}
+
+p {
+    font-family: $font;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25;
+    color: $color-text-secondary;
+    
+    & .text-center {
+        text-align: center!important;
+    }
+} 

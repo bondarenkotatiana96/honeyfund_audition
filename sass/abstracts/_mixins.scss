@@ -1,0 +1,16 @@
+/* --breakpoint-xs: 0;
+    --breakpoint-sm: 576px (mobile);
+    --breakpoint-md: 768px; (tablet)
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px; */
+
+    // MEDIA QUERY MANAGER
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile {
+        @media (max-width: 576px) { @content };
+    };
+    @if $breakpoint == tablet {
+        @media (max-width: 768px) { @content };
+    }
+}

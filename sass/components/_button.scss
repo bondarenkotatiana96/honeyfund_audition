@@ -1,0 +1,55 @@
+a.btn {
+    &:active, 
+    &:focus, 
+    &:hover,
+    &:link, 
+    &:visited {
+     font-size: .875rem;
+     text-decoration: none;
+     cursor: pointer;
+     margin-right: 20px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+
+    @include respond(tablet) {
+        display: inline-flex;
+        width: auto;
+        margin-top: 0;
+        margin-right: auto;
+    }
+
+    @include respond(mobile) {
+        display: flex;
+        width: auto;
+        margin-top: 15px;
+    }
+
+    }
+ }
+ 
+ a:link, a:visited {
+     color: $color-buttons-secondary;
+     text-decoration: underline;
+ }
+ 
+ .btn-primary {
+     &:link, 
+     &:visited {
+     color: $color-white;
+     background-color: $color-buttons;
+     border: 2px solid $color-buttons;
+     text-decoration: none;
+     }
+ }
+ 
+ .btn-group-lg>.btn, .btn-lg {
+     font-size: .8125rem;
+     line-height: 2.3rem;
+     min-width: 150px;
+     min-height: 50px;
+ }
+ 
+ .btn:not(:disabled):not(.disabled) {
+     cursor: pointer;
+ }

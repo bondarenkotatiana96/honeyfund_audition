@@ -1,0 +1,37 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/base";
+@import "base/typography";
+@import "components/button";
+
+div {
+    display: block;
+}
+
+section.box.cta {
+    padding: 10px 15px;
+    display: block;
+
+    & .col {
+        margin: 5px auto;
+        @include respond(tablet) {
+            margin: 10px auto;
+        }
+    }
+
+    @include respond(mobile) {
+        padding: 22px;
+    }
+}
+
+.box {
+    width: 100%;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+    background-color: $color-white;
+    overflow: hidden;
+    margin-bottom: 26px;
+}

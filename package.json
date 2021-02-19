@@ -1,0 +1,14 @@
+{
+  "name": "honeyfund_tatiana",
+  "version": "1.0.0",
+  "description": "audition for frontend developer position",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Tatiana Bondarenko",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
